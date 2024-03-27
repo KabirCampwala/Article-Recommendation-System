@@ -1,0 +1,29 @@
+<%- include('header') %>
+
+<div class="container">
+
+
+<h6 style="text-decoration: underline;"><b>Articles listed below are similar to "<%= query %>":</b></h6>
+
+<table class="u-full-width">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Reading Time</th>
+      <th>Claps</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% recommendations.forEach(recommendation => { %>
+    <tr>
+      <td><%= recommendation.title %></td>
+      <td><%= recommendation.reading_time %></td>
+      <td><%= recommendation.claps %></td>
+      <td><a href="<%= recommendation.link %>">Read More</a></td>
+    </tr>
+    <% }); %>
+  </tbody>
+</table>
+</div>
+<%- include('footer') %>

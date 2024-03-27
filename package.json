@@ -1,0 +1,22 @@
+{
+  "name": "recsys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "chota": "^0.9.2",
+    "ejs": "^3.1.9",
+    "express": "^4.19.1",
+    "wingcss": "^1.0.0-beta"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

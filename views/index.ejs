@@ -1,0 +1,67 @@
+<%- include('header') %>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: ; */
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            /* background-color: beige; */
+            border-radius: 8px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 2px;
+            background-color: rgb(206, 39, 39);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: rgba(206, 39, 39, 0.928);
+        }
+        .space {
+            margin-bottom: 25rem;
+        }
+    </style>
+
+<h3>Find Similar Articles</h3>
+<form action="/output" method="get">
+    <input type="text" id="query" name="query" placeholder="Enter the title of an article you liked">
+    <button type="submit">Submit</button>
+    <div class="space"></div>
+</form>
+<%- include('footer') %>
