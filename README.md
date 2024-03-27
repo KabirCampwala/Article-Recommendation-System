@@ -4,7 +4,8 @@ Steps to run the project:
 
  - Download the repo in your directory
  - Open the terminal and navigate to the project directory
- - Run the command `npm install` 
+ - Run the command `npm install`
+ - Run the command `pip install scikit-learn`
  - Once all dependencies are installed, run `nodemon server.js`
  - Enter a query on the webpage and hit enter to see the results
 
