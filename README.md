@@ -18,9 +18,9 @@ Changes to make in the project:
         - All articles with all fields as one separate 
     - Add the following routes to server.js:
         - `Discover` route will contain the form to get recommendations
-        -  `About` route that will show information regarding the entire project <i>done N</i>
-        - `Sign-Up` route will contain a sign-up form<i>done N</i>
-        - `Login` route will contain a login form <i>done N</i>
+        -  `About` route that will show information regarding the entire project  <i>done N</i>
+        - `Sign-Up` route will contain a sign-up form <i>done N</i>
+        - `Login` route will contain a login form  <i>done N</i>
         - `Articles` route will contain all the articles on a single page
         - `Home` route shall be our landing page
     - Add the following to views directory:
