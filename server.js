@@ -13,6 +13,16 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+//view for signup
+app.get('/signup',(req,res)=>{
+    res.render('signup');
+});
+
+//view for login
+app.get('/login',(req,res)=>{
+    res.render('login');
+});
+
 app.get('/output', (req, res) => {
     const query = req.query.query || 'Best technology to learn';
     const jsonFile = "articles.json";
