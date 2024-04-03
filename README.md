@@ -18,7 +18,7 @@ Changes to make in the project:
         - All articles with all fields as one separate 
     - Add the following routes to server.js:
         - `Discover` route will contain the form to get recommendations
-        -  `About` route that will show information regarding the entire project
+        -  `About` route that will show information regarding the entire project 
         - `Sign-Up` route will contain a sign-up form
         - `Login` route will contain a login form
         - `Articles` route will contain all the articles on a single page
@@ -27,6 +27,6 @@ Changes to make in the project:
         - `discover.ejs` will be connected to `/discover`
         - `about.ejs` will be connected to `/about`
         - `sign-up.ejs` will be connected to `/signup`
-        - `login.ejs` will be connected to `/login`
+        - `login.ejs` will be connected to `/login`  <i>done</i>
         - `articles.ejs` will be connected to `/articles`
         - `home.ejs` will be connected to `/home`
