@@ -9,6 +9,7 @@
 
     app.use(express.static(path.join(__dirname, '/public')));
 
+    //view for home
     app.get('/', (req, res) => {
         res.render('index');
     });
@@ -26,6 +27,25 @@
     app.get('/about',(req,res)=>{
         res.render('about');
     });
+
+    //view for discover
+    app.get('/discover', (req, res) => {
+        const query = req.query.query || 'Best technology to learn';
+        const jsonFile = "articles.json";
+        exec(`python3 article_recommender.py "${query}" ${jsonFile}`, (error, stdout, stderr) => {
+            if (error) {
+                console.error(`Error: ${error.message}`);
+                return;
+            }
+            if (stderr) {
+                console.error(`stderr: ${stderr}`);
+                return;
+            }
+            const recommendations = JSON.parse(stdout);
+            res.render('discover', { recommendations, query });
+        });
+    });
+    
 
     app.get('/output', (req, res) => {
         const query = req.query.query || 'Best technology to learn';

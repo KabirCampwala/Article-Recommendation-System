@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+</head>
+<body>
+    <h1>Discover Articles</h1>
+    <% if (recommendations && recommendations.length) { %>
+        <ul>
+            <% recommendations.forEach((article, index) => { %>
+                <li>
+                    <h2><%= article.title %></h2>
+                    <p>Claps: <%= article.claps %></p>
+                    <p>Reading Time: <%= article.reading_time %></p>
+                    <p>Author: <%= article.author %></p>
+                    <p><a href="<%= article.link %>">Read More</a></p>
+                </li>
+            <% }); %>
+        </ul>
+    <% } else { %>
+        <p>No recommendations found.</p>
+    <% } %>
+</body>
+</html>
