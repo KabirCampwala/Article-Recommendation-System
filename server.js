@@ -22,7 +22,7 @@
     app.get('/login',(req,res)=>{
         res.render('login');
     });
-
+// view for about
     app.get('/about',(req,res)=>{
         res.render('about');
     });

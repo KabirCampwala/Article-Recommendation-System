@@ -12,6 +12,7 @@
       <th>Reading Time</th>
       <th>Claps</th>
       <th>Link</th>
+      <th>Author</th>
     </tr>
   </thead>
   <tbody>
@@ -21,6 +22,7 @@
       <td><%= recommendation.reading_time %></td>
       <td><%= recommendation.claps %></td>
       <td><a href="<%= recommendation.link %>">Read More</a></td>
+      <td><%= recommendation.author%></td>
     </tr>
     <% }); %>
   </tbody>

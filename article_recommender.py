@@ -23,7 +23,7 @@ def process_articles(json_file):
       data = json.load(file)
       for article in data:
         if all(key in article and article[key] for key in ['author', 'claps', 'reading_time', 'link', 'title', 'text']):
-          cleaned_articles.append((article['text'].split(), article['title'], article['claps'], article['reading_time'], article['link']))
+          cleaned_articles.append((article['text'].split(), article['title'], article['claps'], article['reading_time'], article['link'], article['author']))
     return cleaned_articles
   except FileNotFoundError:
     logging.error(f"Error: Could not find JSON file: {json_file}")
@@ -61,7 +61,7 @@ def main(query, json_file):
 
     scores.sort(key=lambda x: x[1], reverse=True)
 
-    recommendations = [{'title': article[0], 'claps': article[1], 'reading_time': article[2], 'link': article[3]} for _, _, article in scores[:10]]
+    recommendations = [{'title': article[0], 'claps': article[1], 'reading_time': article[2], 'link': article[3], 'author':article[4] } for _, _, article in scores[:10]]
     print(json.dumps(recommendations))
   except Exception as e:
     logging.error(f"Error generating recommendations: {e}")
