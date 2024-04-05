@@ -17,15 +17,15 @@ Changes to make in the project:
         - [ ] Article text snippet (max 100 words)
     - Add the following routes to server.js:
         - [ ] `Discover` route will contain the form to get recommendations
-        - [ ]  `About` route that will show information regarding the entire project  <i>done N</i>
-        - [ ] `Sign-Up` route will contain a sign-up form <i>done N</i>
-        - [ ] `Login` route will contain a login form  <i>done N</i>
+        - [x]  `About` route that will show information regarding the entire project  
+        - [x] `Sign-Up` route will contain a sign-up form 
+        - [x] `Login` route will contain a login form  
         - [ ] `Articles` route will contain all the articles on a single page
-        - [ ] `Home` route shall be our landing page
+        - [x] `Home` route shall be our landing page
     - Add the following to views directory:
         - [ ] `discover.ejs` will be connected to `/discover`
-        - [ ] `about.ejs` will be connected to `/about` <i>done N</i>
-        - [ ] `sign-up.ejs` will be connected to `/signup` <i>done N</i>
-        - [ ] `login.ejs` will be connected to `/login`  <i>done N</i>
+        - [x] `about.ejs` will be connected to `/about` 
+        - [x] `sign-up.ejs` will be connected to `/signup` 
+        - [x] `login.ejs` will be connected to `/login`  
         - [ ] `articles.ejs` will be connected to `/articles`
-        - [ ] `home.ejs` will be connected to `/home` <i>done?</i>
+        - [x] `home.ejs` will be connected to `/home` 
