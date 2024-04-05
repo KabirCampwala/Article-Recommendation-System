@@ -50,53 +50,28 @@ def calculate_score(query, article):
   score = sum(freq) / len(article[0]) if len(article[0]) > 0 else 0
   return score, article[1:] if len(article) >= 5 else (None, None, None, None)
 
-# def main(query, json_file):
-#   try:
-#     articles = process_articles(json_file)
-#     scores = []
-#     for i, article in enumerate(articles):
-#       score, article_info = calculate_score(query, article)
-#       if article_info[0] is not None:
-#         scores.append((i+1, score, article_info))
-
-#     scores.sort(key=lambda x: x[1], reverse=True)
-
-#     recommendations = [{'title': article[0], 'claps': article[1], 'reading_time': article[2], 'link': article[3], 'author':article[4] } for _, _, article in scores[:10]]
-#     print(json.dumps(recommendations))
-#   except Exception as e:
-#     logging.error(f"Error generating recommendations: {e}")
-#     sys.exit(1)
-
-#altered code 
-
 def main(query, json_file):
-    try:
-        articles = process_articles(json_file)
-        scores = []
-        for i, article in enumerate(articles):
-            score, article_info = calculate_score(query, article)
-            if article_info[0] is not None:
-                scores.append((i+1, score, article_info))
+  try:
+    articles = process_articles(json_file)
+    scores = []
+    for i, article in enumerate(articles):
+      score, article_info = calculate_score(query, article)
+      if article_info[0] is not None:
+        scores.append((i+1, score, article_info))
 
-        scores.sort(key=lambda x: x[1], reverse=True)
+    scores.sort(key=lambda x: x[1], reverse=True)
 
-        recommendations = [{'title': article[0], 'claps': article[1], 'reading_time': article[2], 'link': article[3], 'author':article[4] } for _, _, article in scores[:10]]
-        return recommendations
-    except Exception as e:
-        logging.error(f"Error generating recommendations: {e}")
-        sys.exit(1)
-
+    recommendations = [{'title': article[0], 'claps': article[1], 'reading_time': article[2], 'link': article[3], 'author':article[4] } for _, _, article in scores[:10]]
+    print(json.dumps(recommendations))
+  except Exception as e:
+    logging.error(f"Error generating recommendations: {e}")
+    sys.exit(1)
 
 if __name__ == "__main__":
   if len(sys.argv) != 3:
     print("Usage: python article_recommender.py <query> <json_file>")
     sys.exit(1)
 
-  # query = sys.argv[1]
-  # json_file = sys.argv[2]
-  # main(query, json_file)
-
   query = sys.argv[1]
   json_file = sys.argv[2]
-  recommendations = main(query, json_file)
-  print(json.dumps(recommendations))
+  main(query, json_file)
