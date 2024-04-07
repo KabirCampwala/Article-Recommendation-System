@@ -31,20 +31,20 @@ Changes to make in the project:
         - [x] `home.ejs` will be connected to `/home` 
 - To make the following UI changes:
     - Update the header with the following information:
-        - [ ] Change title of project to CurioSift (title will be on the top left)
+        - [x] Change title of project to CurioSift (title will be on the top left)
         - Add links to the top right:
-            - [ ] Home 
-            - [ ] Discover
-            - [ ] Articles
-            - [ ] About
-            - [ ] Signup
-            - [ ] Login
+            - [x] Home 
+            - [x] Discover
+            - [x] Articles
+            - [x] About
+            - [x] Signup
+            - [x] Login
         - Make sure the active page is highlighted.
-    - [ ] Set a font for the title
-    - [ ] Set a font for the content
-    - [ ] Update the articles page to be similar to this ![https://blog.cassidoo.co/](image.png)
-    - [ ] The header and footer inspiration can be taken from [blog.cassidoo.co](https://blog.cassidoo.co/)
+    - [x] Set a font for the title
+    - [x] Set a font for the content
+    - [x] Update the articles page to be similar to this ![https://blog.cassidoo.co/](image.png)
+    - [x] The header and footer inspiration can be taken from [blog.cassidoo.co](https://blog.cassidoo.co/)
     - Update the footer with the following information:
-        - [ ] Change title of project to CurioSift (title will be at the top of the stack)
-        - [ ] Add names of all the team members (on the in the middle of the stack)
-        - [ ] Add name of the guide (at the bottom of the stack)            
+        - [x] Change title of project to CurioSift (title will be at the top of the stack)
+        - [x] Add names of all the team members (on the in the middle of the stack)
+        - [x] Add name of the guide (at the bottom of the stack)            
