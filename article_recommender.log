@@ -2,3 +2,5 @@ ERROR:root:Error generating recommendations: tuple index out of range
 ERROR:root:Error generating recommendations: tuple index out of range
 ERROR:root:Error generating recommendations: tuple index out of range
 ERROR:root:Error generating recommendations: tuple index out of range
+ERROR:root:Error generating recommendations: name 'CountVectorizer' is not defined
+ERROR:root:Error generating recommendations: name 'textwrap' is not defined

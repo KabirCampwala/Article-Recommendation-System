@@ -67,6 +67,8 @@ def main(query, json_file):
     logging.error(f"Error generating recommendations: {e}")
     sys.exit(1)
 
+
+
 if __name__ == "__main__":
   if len(sys.argv) != 3:
     print("Usage: python article_recommender.py <query> <json_file>")

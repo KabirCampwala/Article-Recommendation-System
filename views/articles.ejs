@@ -1,0 +1,24 @@
+<%- include('header') %>
+
+<main>
+    <br>
+    <content>
+        <% recommendations.forEach(recommendation => { %>
+                <h3><a href="<%= recommendation.link %>" class="title"><%= recommendation.title %></a></h3>
+                <p>By: <%= recommendation.author%></p>
+                <span class="excerpt"><%= recommendation.articles %></span>
+                <div>
+                    <a href="#">Reading Time: <%= recommendation.reading_time %></a>
+                <a href="#"> Claps: <%= recommendation.claps %></a>
+                </div>
+            <hr>
+            <br>
+                <% }); %>
+            
+    </content>
+
+    <br>
+
+</main>
+
+<%- include('footer') %>

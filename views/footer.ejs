@@ -1,23 +1,36 @@
-
-<footer style="bottom: 0; left: 0; width: 100%; background-color: white; color: black;">
-<hr>
-    <div class="container">
-        <div class="nav">
-            <div class="six columns">
-                <h6><b>Article Recommendation System</b></h6>
-            </div>
-            <div class="two columns">
-                <a class="button" href="/signup">SignUp</a>
-            </div>
-            <div class="two columns">
-                <a class="button" href="/login">Login</a>
-            </div>
-            <div class="two columns">
-                <a class="button" href="/about">About</a>
-            </div>
-        </div>
-    </div>
-        
+<footer>
+    <br>
+    <hr>
+    <a href="#"><b>Created by:</b></a>
+    <p>Kabir Ahmed Campwala | Jiya Patel | Naman Shah | Sujal Patel</p>
+    <a href="#"><b>Guided by:</b></a> 
+    <p>Prof. Devandra Parmar</p>
+    © <a href="https://github.com/KabirCampwala/Article-Recommendation-System">CurioSift</a>
 </footer>
+
+<script>
+    let colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f", "#6a37c8", "#f3824a" ,"#3bc9a1", "#c75eaf"];
+
+    function getRandomColor() {
+        return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    function setRandomLinkColor() {
+        Array.from(document.getElementsByTagName("a")).forEach((e) => {
+            e.style.textDecorationColor = getRandomColor();
+        });
+    }
+
+    function setColorHoverListener() {
+        Array.from(document.querySelectorAll("a, button")).forEach((e) => {
+            e.addEventListener("mouseover", setRandomLinkColor);
+        });
+    }
+
+    (function () {
+        setRandomLinkColor();
+        setColorHoverListener();
+    })();
+</script>
 </body>
 </html>

@@ -4,29 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article Recommendation System</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap" rel="stylesheet">
     <style>
-        .nav {
-            margin-top: 1rem;
+        element.style {
+        border: 1px solid aliceblue;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        html, body, button, code {
+            font-family: 'iA Writer Mono', monospace;
         }
+
+        html, body {
+            margin: auto;
+            padding: 20px;
+            max-width: 70ch;
+            background-color: var(--black);
+            color: var(--white);
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        body:focus-visible {
+            outline: none;
+        }
+
+        :root {
+            --gray: #a4a4a4;
+            --white: #efefef;
+            --transwhite: rgba(239, 239, 239, .7);
+            --moretranswhite: rgba(239, 239, 239, .1);
+            --black: #252525;
+            --transblack: rgba(37, 37, 37, .7);
+            --moretransblack: rgba(37, 37, 37, .1);
+            --highlight: #e5ffc3;
+            --red: #e4002b;
+            --green: #24d05a;
+            --pink: #eb4888;
+            --blue: #10a2f5;
+            --yellow: #e9bc3f;
+        }
+
+        ::selection {
+            background-color: #0f0f0f;
+            color: var(--white);
+        }
+    }
+
+    html, body {
+        font-family: 'iA Writer Mono', monospace;
+        margin: auto;
+        padding: 20px;
+        max-width: 70ch;
+        background-color: var(--white);
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        color: var(--black);
+    }
+
+    a {
+        color: var(--black);
+    }
+
+    body:focus-visible {
+        outline: none;
+    }
+
+    :focus-visible {
+        outline: -webkit-focus-ring-color auto 1px;
+    }
+
+    ::selection {
+        background-color: var(--highlight);
+        color: var(--black);
+    }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="nav">
-            <div class="six columns">
-                <h5><b>Article Recommendation System</b></h5>
-            </div>
-            <div class="two columns">
-                <a class="button" href="/">Home</a>
-            </div>
-            <div class="two columns">
-                <a class="button" href="/discover">Discover</a>
-            </div>
-            <div class="two columns">
-                <a class="button" href="/about">About</a>
+    <header>
+        <div class="header-section">
+            <div class="header-frame">
+                <h1>CurioSift</h1>
+                <h2>Article Recommendation System</h2>
             </div>
         </div>
-    </div>
-    <hr>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/discover">Discover</a>
+        <a href="/articles">Articles</a>
+        <a href="/about">About</a>
+        <a href="/login">Login</a>
+        <a href="/signup">Signup</a>
+    </nav>
