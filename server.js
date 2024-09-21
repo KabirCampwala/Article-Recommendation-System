@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '/views'))
+app.set('views', path.join(__dirname, '/views'));
 
 app.use(express.json());
 
@@ -52,7 +52,6 @@ app.get('/articles', (req, res) => {
         res.render('articles', { recommendations, query });
     });
 });
-
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);

@@ -14,7 +14,7 @@
     "child_process": "^1.0.2",
     "chota": "^0.9.2",
     "dotenv": "^16.4.5",
-    "ejs": "^3.1.9",
+    "ejs": "^3.1.10",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "passport-local": "^1.0.0",
